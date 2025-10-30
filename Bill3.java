@@ -12,6 +12,6 @@ public class Bill3 {
 		int bill= Integer.parseInt(args[3]);
 
 		double pay = Math.ceil(bill/3.0);
-		System.out.println("Dear , "+name3+", "+name2+" and "+name1+" : pay "+(int)pay+" Shekels each.");
+		System.out.println("Dear "+name3+", "+name2+" and "+name1+": pay "+(double)((int)pay)+" Shekels each.");
 	}
 }

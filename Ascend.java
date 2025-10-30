@@ -10,33 +10,12 @@ public class Ascend {
 		int max , min , middle;
 		max = Math.max(Math.max(a, b), c);
 		min = Math.min(Math.min(a, b), c);
-		if(max==a)
-		{
-			if(min==b)
-				middle = c;
-			else
-				middle = b;	
-		}
-		else	
-			if(max == b)
-			{
-				if(min == a)
-				{
-					middle = c;
-				}
-				else
-					middle = a;
-			}
-			else
-				if(min == b)
-				{
-					middle = a;
-				}
-				else
-				{
-					middle = b;
-				}
-			System.out.println(max + ", "+ middle +" "+ min);	
+		int aB,aC,bC;
+		aB= Math.max(a,b);
+		aC= Math.max(a,c);
+		bC= Math.max(b,c);
+		middle = Math.min(Math.min(aB,aC),bC);
+			System.out.println(min + ", "+ middle +" ,"+ max);	
 	}
 	
 }
